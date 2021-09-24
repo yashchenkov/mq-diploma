@@ -7,12 +7,50 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <div class="popup_layer">
+    <div class="popup">
+      <h3 class="popup_title">ваш фидбек</h3>
+      <form class="popup_form">
+        <div class="popup_label">
+         <label class="popup_select_label">
+          <span>Как часто вы заходите на сайт?</span>
+          <select name="" id="" class="popup_select">
+            <option value="">Каждый день</option>
+            <option value="">Почти каждый день</option>
+            <option value="">Другое</option>
+          </select>
+         </label>
+        </div>
+        <div class="popup_radio popup_label">
+          <span>Вы подписаны на e-mail рассылку?</span>
+          <div class="second_popup_label_wrapper">
+            <label class="radio_check_label_group">
+              <input class="popup_radio_check" name="e-mail question" type="radio" value="yes"><span class="radio_check_text">Да</span>
+            </label>
+            <label class="radio_check_label_group">
+              <input class="popup_radio_check" name="e-mail question" type="radio" value="no">
+              <span class="radio_check_text">Нет</span>
+            </label>
+          </div>
+        </div>
+        <div class="popup_label">
+         <label class="popup_textarea_label">
+          <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте</span>
+          <textarea class="popup_textarea" placeholder="Может, больше рецептов?"></textarea>
+         </label>
+        </div>
+        <button class="popup_button">
+          <span class="popup_button_text">отправить</span>
+        </button>
+      </form>
+    </div>
+  </div>
+<header class="header">
  <div class="wrapper_header">
   <div class="logo_menu_container">
    <div class="container_logo">
     <a href="/">
-    <img class="logo" src="sources/svg/noemi-logo.svg" alt="logo" width="185">
+    <img class="logo" src="sources/svg/noemi-logo.svg" alt="logo">
     </a>
    </div>
   <nav class="container_menu">
@@ -31,6 +69,46 @@
  </div>
 </header>
 <div class="content">
+  <section class="trends">
+    <h3 class="trends_text">cейчас в тренде</h3>
+    <div class="trend_cards">
+      <article class="trend_card trend1">
+        <div class="trend_card_content">
+          <ul class="tag_list">
+            <li class="tag_list_item"><a href="" class="tag">lifestyle</a></li>
+            <li class="tag_list_item"><a href="" class="tag">interior</a></li>
+          </ul>
+          <p class="trend_text">сейчас в тренде: сад на подоконнике</p>
+        </div>
+      </article>
+      <article class="trend_card trend2">
+        <div class="trend_card_content">
+          <ul class="tag_list">
+            <li class="tag_list_item"><a href="" class="tag">food</a></li>
+          </ul>
+          <p class="trend_text">сыры на красивых картинках из интернета: какие они на вкус?</p>
+        </div>
+      </article>
+      <article class="trend_card trend3">
+        <div class="trend_card_content">
+          <ul class="tag_list">
+            <li class="tag_list_item"><a href="" class="tag">lifestyle</a></li>
+            <li class="tag_list_item"><a href="" class="tag">travel</a></li>
+          </ul>
+          <p class="trend_text">собираемся в первый поход в горы</p>
+      </div>
+      </article>
+      <article class="trend_card trend4">
+        <div class="trend_card_content">
+          <ul class="tag_list">
+            <li class="tag_list_item"><a href="" class="tag">food</a></li>
+            <li class="tag_list_item"><a href="" class="tag">health</a></li>
+          </ul>
+          <p class="trend_text">сейчас в тренде: сколько витамина c в лимонах?</p>
+        </div>
+      </article>
+    </div>
+  </section>
 <div class="main_wrapper">
  <main class="main">
   <article class="article_common article_1">
@@ -40,6 +118,7 @@
            alt="Мужчина у воды"
            width="381px"
            height="293px"
+           class="main_article_picture"
        >
     </div>
     <div class="article_text_container">
@@ -75,7 +154,8 @@
       <img src="sources/img/last-post2.jpg"
            alt="Женщина-йог на берегу"
            weight="381px"
-           height="293px">
+           height="293px"
+           class="main_article_picture">
     </div>
     <div class="article_text_container">
       <header>
@@ -108,7 +188,8 @@
       <img src="sources/img/last-post3.jpg"
            alt="Женщина на музыкальном фестивале"
            width="381px"
-           height="293px">
+           height="293px"
+           class="main_article_picture">
     </div>
     <div class="article_text_container">
       <header>
@@ -140,6 +221,7 @@
            alt="Еда на столе"
            width="381px"
            height="293px"
+           class="main_article_picture"
       >
     </div>
     <div class="article_text_container">
@@ -171,7 +253,8 @@
       <img src="sources/img/last-post5.jpg"
            alt="Подушка с принтом"
            width="381px"
-           height="293px">
+           height="293px"
+           class="main_article_picture">
     </div>
     <div class="article_text_container">
       <header>
@@ -203,7 +286,8 @@
       <img src="sources/img/last-post6.jpg"
            alt="Люди на утесе"
            width="381px"
-           height="293px">
+           height="293px"
+           class="main_article_picture">
     </div>
     <div class="article_text_container">
       <header>
@@ -389,6 +473,77 @@
    </section>
 </aside>
 </div>
+<section class="products">
+  <h3 class="products_title">наши изделия</h3>
+  <div class="products_cards">
+    <article class="products_card">
+      <picture>
+        <source srcset="sources/img/shop-item-mobile1.jpg" media="(max-width: 640px)" width="284px" height="284px">
+        <source srcset="sources/img/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
+          <img class="products_picture" src="sources/img/shop-item-desk1.jpg" alt="Розовая подушка с принтом" width="300px" height="200px">
+      </picture> 
+      <div class="products_card_text">   
+        <h4 class="item_title">подушки на диван</h4>
+        <p class="item_text">Набор из подушек с модными принтами. Видео о создании <a class="item_link">здесь</a></p>
+        <div class="products_card_price_and_button">
+          <div class="products_card_price">
+            <span class="crossed_item_price">1000 &#8381</span>
+            <span class="item_price">800 &#8381</span>
+          </div>
+          <a href="#">
+          <button class="products_card_button" type="submit">
+            <span class="card_button_text">в магазин</span>
+          </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="products_card">
+      <picture>
+        <source srcset="sources/img/shop-item-mobile2.jpg" media="(max-width: 640px)" width="284px" height="284px">
+        <source srcset="sources/img/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
+          <img class="products_picture" src="sources/img/shop-item-desk2.jpg" alt="Игрушка ручной работы" width="300px" height="200px">
+      </picture>
+      <div class="products_card_text product2">   
+        <h4 class="item_title">кукла "зайчик"</h4>
+        <p class="item_text">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="item_link">весення серия постов</a> в блоге и несколько подкастов.</p>
+        <div class="products_card_price_and_button">
+          <div class="products_card_price">
+            <span class="crossed_item_price"></span>
+            <span class="item_price">3500 &#8381</span>
+          </div>
+          <a href="#">
+          <button class="products_card_button" type="submit">
+            <span class="card_button_text">в магазин</span>
+          </button>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="products_card">
+      <picture class="products_picture">
+        <source srcset="sources/img/shop-item-mobile3.jpg" media="(max-width: 640px)" width="284px" height="284px">
+        <source srcset="sources/img/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
+          <img src="sources/img/shop-item-desk3.jpg" alt="Белая ваза" width="300px" height="200px">
+      </picture>
+      <div class="products_card_text">   
+        <h4 class="item_title">шестиугольная рамка</h4>
+        <p class="item_text">Необычная рамка для украшения дома из видео <a class="item_link">"Как сделать рамку из подручных средств за 30 минут"</a></p>
+        <div class="products_card_price_and_button">
+          <div class="products_card_price">
+            <span class="crossed_item_price">500 &#8381</span>
+            <span class="item_price">400 &#8381</span>
+          </div>
+          <a href="#">
+          <button class="products_card_button" type="submit">
+            <span class="card_button_text">в магазин</span>
+          </button>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 </div>
 <footer class="footer">
   <div class="footer_wrapper">
