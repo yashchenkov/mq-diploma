@@ -8,6 +8,8 @@
 </head>
 <body>
   <div class="popup_layer">
+    <div class="popup_button_container">
+      <button class="popup_close_button"></button>
     <div class="popup">
       <h3 class="popup_title">ваш фидбек</h3>
       <form class="popup_form">
@@ -45,6 +47,7 @@
       </form>
     </div>
   </div>
+  </div>
 <header class="header">
  <div class="wrapper_header">
   <div class="logo_menu_container">
@@ -54,6 +57,9 @@
     </a>
    </div>
   <nav class="container_menu">
+    <a class="burger_menu_link" href="#">
+      <img class="burger_menu_img" src="sources/svg/menu_black_24dp.svg" alt="menu button">
+    </a>
     <ul class="menu_list">
       <li class="list_item"><a href="" class="link">главная</a></li>
       <li class="list_item"><a href="" class="link">посты</a></li>
@@ -64,11 +70,14 @@
     </ul>
   </nav>
   </div>
+  <div class="container_logo_mobile">
+    <a class="logo_mobile" href="/">
+    <img class="logo" src="sources/svg/noemi-logo.svg" alt="logo">
+    </a>
    <h1 class="title">Блог о творчестве, спорте, и образе жизни
    </h1>
  </div>
 </header>
-<div class="content">
   <section class="trends">
     <h3 class="trends_text">cейчас в тренде</h3>
     <div class="trend_cards">
@@ -112,15 +121,11 @@
 <div class="main_wrapper">
  <main class="main">
   <article class="article_common article_1">
-    <div class="article_image_container">
       <img 
            src="sources/img/last-post1.jpg"
            alt="Мужчина у воды"
-           width="381px"
-           height="293px"
            class="main_article_picture"
-       >
-    </div>
+       >    
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
@@ -133,7 +138,7 @@
           <a class="tag" href="#">health</a>
           </li>
       </ul>
-      <h2 class="h4_1">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         10 мест, ради которых стоит проснуться на рассвете
         </a>
@@ -150,13 +155,9 @@
       </div>
   </article>
   <article class="article_common article_2">
-    <div class="article_image_container">
       <img src="sources/img/last-post2.jpg"
            alt="Женщина-йог на берегу"
-           weight="381px"
-           height="293px"
            class="main_article_picture">
-    </div>
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
@@ -168,7 +169,7 @@
             lifestyle</a>
             </li>
       </ul>
-      <h2 class="h4_2">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         йога для начинающих в домашних условиях
         </a>
@@ -184,20 +185,16 @@
       </div>
   </article>
   <article class="article_common article_3">
-    <div class="article_image_container">
       <img src="sources/img/last-post3.jpg"
            alt="Женщина на музыкальном фестивале"
-           width="381px"
-           height="293px"
            class="main_article_picture">
-    </div>
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
         <li class="tag_list_item">
           <a class="tag" href="#">music</a></li>
       </ul>
-      <h2 class="h4_3">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         лучшие музыкальные фестивали этого лета
         </a>
@@ -216,14 +213,10 @@
       </div>
   </article>
   <article class="article_common article_4">
-    <div class="article_image_container">
       <img src="sources/img/last-post4.jpg"
            alt="Еда на столе"
-           width="381px"
-           height="293px"
            class="main_article_picture"
       >
-    </div>
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
@@ -232,7 +225,7 @@
         <li class="tag_list_item">
           <a class="tag" href="#">food</a></li>
       </ul>
-      <h2 class="h4_4">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         наукоемкий подход к кулинарии
         </a>
@@ -249,13 +242,9 @@
     </div>
   </article>
   <article class="article_common article_5">
-    <div class="article_image_container">
       <img src="sources/img/last-post5.jpg"
            alt="Подушка с принтом"
-           width="381px"
-           height="293px"
            class="main_article_picture">
-    </div>
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
@@ -266,7 +255,7 @@
         <li class="tag_list_item">
           <a class="tag" href="#">art</a></li>
       </ul>
-      <h2 class="h4_5">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         делаем модные принты на подушках для интерьера
         </a>
@@ -282,13 +271,9 @@
       </div>
   </article>
   <article class="article_common article_6">
-    <div class="article_image_container">
       <img src="sources/img/last-post6.jpg"
            alt="Люди на утесе"
-           width="381px"
-           height="293px"
            class="main_article_picture">
-    </div>
     <div class="article_text_container">
       <header>
       <ul class="tag_list">
@@ -299,7 +284,7 @@
           <a class="tag" href="#">lifestyle</a>
         </li>
       </ul>
-      <h2 class="h4_6">
+      <h2 class="main_article_title">
         <a class="article_title" href="#">
         как первый раз отправиться в горы?
         </a>
@@ -472,12 +457,12 @@
       </ul>
    </section>
 </aside>
-</div>
+
 <section class="products">
   <h3 class="products_title">наши изделия</h3>
   <div class="products_cards">
-    <article class="products_card">
-      <picture>
+    <article class="products_card product1">
+      <picture class="products_picture_container">
         <source srcset="sources/img/shop-item-mobile1.jpg" media="(max-width: 640px)" width="284px" height="284px">
         <source srcset="sources/img/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
           <img class="products_picture" src="sources/img/shop-item-desk1.jpg" alt="Розовая подушка с принтом" width="300px" height="200px">
@@ -498,8 +483,8 @@
         </div>
       </div>
     </article>
-    <article class="products_card">
-      <picture>
+    <article class="products_card product2">
+      <picture class="products_picture_container">
         <source srcset="sources/img/shop-item-mobile2.jpg" media="(max-width: 640px)" width="284px" height="284px">
         <source srcset="sources/img/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
           <img class="products_picture" src="sources/img/shop-item-desk2.jpg" alt="Игрушка ручной работы" width="300px" height="200px">
@@ -520,11 +505,11 @@
         </div>
       </div>
     </article>
-    <article class="products_card">
-      <picture class="products_picture">
+    <article class="products_card product3">
+      <picture class="products_picture_container">
         <source srcset="sources/img/shop-item-mobile3.jpg" media="(max-width: 640px)" width="284px" height="284px">
         <source srcset="sources/img/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)" width="291px" height="226px">
-          <img src="sources/img/shop-item-desk3.jpg" alt="Белая ваза" width="300px" height="200px">
+          <img class="products_picture" src="sources/img/shop-item-desk3.jpg" alt="Белая ваза" width="300px" height="200px">
       </picture>
       <div class="products_card_text">   
         <h4 class="item_title">шестиугольная рамка</h4>
@@ -545,6 +530,7 @@
   </div>
 </section>
 </div>
+
 <footer class="footer">
   <div class="footer_wrapper">
       <address class="address">
