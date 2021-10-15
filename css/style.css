@@ -35,19 +35,7 @@ body {
   justify-content: center;
   align-items:  center;
   display: none;
-}
-
-.popup_layer::before {
-  content: "";
-  background-color: #000000;
-  opacity: 0.5;
-  
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .popup_button_container {
@@ -209,6 +197,8 @@ body {
 
   cursor: pointer;
 
+  font-weight: bold;
+
 }
 
 
@@ -321,6 +311,10 @@ body {
   width: 100%;
 }
 
+.trends_text {
+  font-size: 1.3rem;
+}
+
 .trends_text::after {
   content: "";
   display: block;
@@ -346,10 +340,11 @@ body {
 
   background-size: cover;
 
-  width:  24.8vw;
-  height:  20vw;
+  width:  25%;
+  height:  300px;
 
 }
+
 
 .trend_card::before {
   content: "";
@@ -370,6 +365,7 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
   background-position: center;
+  margin-right: 2px;
 }
 
 .trend2 {
@@ -378,6 +374,7 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
   background-position: center;
+  margin-right: 2px;
 }
 
 .trend3 {
@@ -386,6 +383,7 @@ body {
   background-repeat: no-repeat;
   background-color: #000000;
   background-position: center;
+  margin-right: 2px;
 }
 
 .trend4 {
@@ -415,6 +413,10 @@ body {
   margin-top:  15px;
 }
 
+.trend_text_link {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 
 .main_wrapper {
@@ -427,7 +429,8 @@ body {
 }
 
 .main {
-  max-width: calc(100% - 272px);
+  max-width: 100%;
+  margin-right: 70px;
 }
 
 .article_common {
@@ -559,9 +562,6 @@ h3 {
 
 .post_text {
   margin-left: 10px;
-  
-  display: flex;
-  flex-wrap: wrap;
   align-content: flex-start;
 }
 
@@ -880,25 +880,28 @@ h3 {
 
 .products_card_button {
   margin: 0;
-  
+  display: flex;
+  align-items: center;
   
   height: 49px;
   border: 0;
   
   background-color: #b59f5b;
   
-  color: #ffffff;
-  font-size: 0.9rem;
-  
   padding: 0 30px;
 
   cursor: pointer;
+
+  text-decoration: none;
+  font-weight: bold;
 
 }
 
 
 .card_button_text {
   text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
 
 
@@ -941,6 +944,7 @@ h3 {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
+  overflow: hidden;
 }
 
 .social_link {
@@ -999,9 +1003,6 @@ h3 {
     justify-content: center;
   }
 
-  .main {
-    margin-right: 70px;
-  }
 
 }
 
@@ -1041,8 +1042,9 @@ h3 {
   }
 
   .trend_card {
-    width: 49.9vw;
-    height: 30vw;
+    width: calc(50% - 1px);
+    height: 250px;
+    margin-right: 0;
   }
 
   .trend_card:nth-child(n + 3) {
@@ -1083,16 +1085,24 @@ h3 {
     @media (orientation: landscape) {
       .trend_cards {
          display:  flex;
-         justify-content: space-between;
-
+         /*justify-content: space-between;*/
+         flex-wrap: nowrap;
      }
 
       .trend_card {
          position: relative;
 
-         width:  24.8vw;
-         height:  20vw;
+         width:  25%;
+         height:  300px;
     }
+
+    .trend_card:nth-child(-n + 3) {
+      margin-right: 2px;
+    }
+
+      #trend3, #trend4 {
+        margin-top: 0;
+      }
   }
 }
 
@@ -1155,8 +1165,8 @@ h3 {
   }
 
   .trend_card {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 230px;
   }
 
   .trend_card:nth-child(n + 2) {
@@ -1168,7 +1178,7 @@ h3 {
   }
 
   .main {
-    max-width: 100%;
+    margin-right: 0;
   }
 
   
@@ -1224,6 +1234,10 @@ h3 {
     width: 100%;
   }
 
+  .products {
+    padding: 0;
+  }
+
   .products_cards {
     flex-direction: column;
     align-items: center;
@@ -1247,10 +1261,18 @@ h3 {
          position: relative;
 
 
-         width: 49.8vw;
-         height: 30vw;
+         width: calc(50% - 1px);
+         height: 250px;
+         margin-right: 0;
 
     }
+      .trend_card:nth-child(n + 3) {
+         margin-top: 2px;
+    }
+
+      #trend2 {
+        margin-top: 0;
+      }
   }
 }
 
