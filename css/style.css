@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  max-width: 390px;
 }
 
 .popup_close_button {
