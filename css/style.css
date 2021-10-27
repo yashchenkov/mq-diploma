@@ -430,7 +430,7 @@ body {
 }
 
 .main {
-  max-width: 100%;
+  width: calc(100% - 272px - 70px);
   margin-right: 70px;
 }
 
@@ -1179,6 +1179,7 @@ h3 {
   }
 
   .main {
+    width: 100%;
     margin-right: 0;
   }
 
